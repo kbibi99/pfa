@@ -56,6 +56,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return dao.findEmployeeBySsn(ssn);
 	}
 	
+	@Override
 	public boolean isEmployeeSsnUnique(Integer id, String ssn) {
         Employee employee = findEmployeeBySsn(ssn);
         return ( employee == null || ((id != null) && (employee.getId() == id)));

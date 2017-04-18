@@ -32,7 +32,7 @@ public class EmployeeDAOImpl extends AbstractDAO<Integer, Employee> implements E
 	@Override
 	public List<Employee> findAllEmployees() {
 		Criteria criteria = createEntityCriteria();
-        return (List<Employee>) criteria.list();
+        return criteria.list();
 	}
 
 	@Override
