@@ -35,18 +35,6 @@
     <br/>
     <a href="<c:url value='/new' />">Add New Employee</a>
     
-    <h:form>
-    <p:growl id="growl" life="2000" />
-     
-    <p:commandButton value="Ajax Submit" id="ajax" update="growl" actionListener="#{buttonView.buttonAction}" styleClass="ui-priority-primary" />
- 
-    <p:commandButton value="Non-Ajax Submit" id="nonAjax" actionListener="#{buttonView.buttonAction}" ajax="false" />
- 
-    <p:commandButton value="With Icon" id="withIcon" actionListener="#{buttonView.buttonAction}" update="growl" icon="ui-icon-disk" />
- 
-    <p:commandButton actionListener="#{buttonView.buttonAction}" id="iconOnly" update="growl" icon="ui-icon-disk" title="Icon Only" />
- 
-    <p:commandButton value="Disabled" id="disabled" disabled="true" />
-</h:form>
+
 </body>
 </html>
